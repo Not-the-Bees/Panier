@@ -1,8 +1,10 @@
 <?php
 
+session_start();
+
 require __DIR__.'/models/Product.php';
 
-$products = Product::readAll();
+$products = Product::browse();
 
 require __DIR__.'/views/products/browse.php';
 

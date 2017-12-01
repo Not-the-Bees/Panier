@@ -12,17 +12,18 @@
   <body>
     <?php if ($product): ?>
       <h1><?php echo $product['title']; ?></h1>
-      <p><?php echo $product['description']; ?></p>
+      <p>Description du produit : <br/><?php echo $product['description']; ?></p>
       <aside>
         <dl>
-          <dt>prix :</dt>
+          <dt>Prix du produit:</dt>
           <dd><?php echo $product['price']; ?></dd>
-          <dt>en stock :</dt>
+          <dt>Actuellement en stock :</dt>
           <dd><?php echo $product['quantity']; ?></dd>
         </dl>
       </aside>
     <?php endif; ?>
     <ul>
+      <li><a href="add_cart.php?id=<?php echo $product['id']; ?>">Ajouter au panier</a></li>
       <li><a href="browse_product.php">retour à l'index</a></li>
     </ul>
   </body>
