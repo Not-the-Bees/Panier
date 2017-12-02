@@ -16,8 +16,12 @@
       <?php endforeach; ?>
     </ul>
     <ul>
-      <a href="browse_cart.php">Voir mon panier</a>
-      <a href="index.html">Retour à l'accueil</a>
+      <li>
+        <a href="browse_cart.php">Voir mon panier</a>
+      </li>
+      <li>
+        <a href="index.html">Retour à l'accueil</a>
+      </li>
     </ul>
   </body>
 </html>

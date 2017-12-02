@@ -17,7 +17,7 @@ class Product extends Model {
 
     public static function read($id) {
         $sql = 'SELECT * FROM products WHERE id=:id AND deleted_at IS NULL';
-        $product = [];
+        $product = null;
         $pdo_statement = self::createStatement($sql);
 
         if (
