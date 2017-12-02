@@ -46,5 +46,16 @@ class Cart extends Model {
 
 	}
 
-	
+	public static function delete($id) {
+		$pdo_statement = self::createStatement("DELETE FROM cart WHERE id_product = '$id'");
+		if (
+			$pdo_statement &&
+			$pdo_statement->execute()
+		) {
+			echo "Produit supprimé du panier";
+		} else {
+			echo "Suppression échouée ;(";
+		}
+		return $pdo_statement;
+	}
 }
