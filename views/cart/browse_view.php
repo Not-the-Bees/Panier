@@ -14,7 +14,7 @@
         <li>
           <a href="read_product.php?id=<?php echo $article['id']; ?>">
             <?php echo $article['title']; ?>  -  
-          </a>
+          </a> <br/>
           <a href="browse_cart.php?id=<?php echo $article['id']; ?>"> Supprimer cet article</a>
         </li>
       <?php endforeach; ?>
